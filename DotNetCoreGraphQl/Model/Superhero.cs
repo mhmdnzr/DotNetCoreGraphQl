@@ -13,7 +13,10 @@ namespace DotNetCoreGraphQl.Model
         public string Description { get; set; }
         public string Height { get; set; }
 
+        [HotChocolate.Data.UseSorting]
         public ICollection<Superpower> Superpowers { get; set; }
+
+        [HotChocolate.Data.UseSorting]
         public ICollection<Movie> Movies { get; set; }
     }
 }
